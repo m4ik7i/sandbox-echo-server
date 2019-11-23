@@ -14,7 +14,7 @@ fn index(query: web::Query<Query>) -> impl Responder {
 fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
-            .service(web::resource("/").to(index))
+            .service(web::resource("/").route(web::get().to(index)))
     })
     .bind("localhost:12345")?
     .run()
