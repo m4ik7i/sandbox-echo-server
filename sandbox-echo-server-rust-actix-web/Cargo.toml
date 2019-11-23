@@ -1,0 +1,8 @@
+[package]
+name = "sandbox-echo-server-rust-actix-web"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+actix-web = "1.0.9"
+serde = { version = "1.0.102", features = ["derive"] }
