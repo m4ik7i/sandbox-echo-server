@@ -1,0 +1,9 @@
+[package]
+name = "sandbox-echo-server-rust-tide"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+tide = "0.6.0"
+async-std = { version = "1.5.0", features = ["attributes"] }
+serde = { version = "1.0.102", features = ["derive"] }
